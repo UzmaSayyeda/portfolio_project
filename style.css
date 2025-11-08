@@ -9,15 +9,25 @@ html{
 }
 body{
 
-    background: #090d17;
+    /* background: #090d17; */
+        background: linear-gradient(135deg, #f8f4ef 0%, #ede8e2 50%, #f4efe9 100%);
     color: #fff;
 }
-#header{
+/* #header{
     width:100%;
     height:100vh;
     background-image: url(images/2.jpeg);
     background-size: cover;
     background-position: center;
+} */
+
+/* Modern Beige Background */
+#header {
+    background: linear-gradient(135deg, #f8f4ef 0%, #ede8e2 50%, #f4efe9 100%);
+    background-size: cover;
+    background-position: center;
+    /* padding-top: 120px; */
+    padding-bottom: 120px;
 }
 .container{
     padding : 10px 10%;
@@ -39,7 +49,7 @@ nav ul li{
     margin: 10px 20px;
 }
 nav ul li a{
-    color: #fffef6;
+    color: #2b2b2b;
     text-decoration: none;
     font-size: 18px;
     position: relative;
@@ -48,7 +58,7 @@ nav ul li a::after{
     content: '';
     width: 0%;
     height:3px;
-    background: #054f68;
+    background: #b38a5e;
     position:absolute;
     left:0;
     bottom : -6px;
@@ -62,15 +72,61 @@ nav ul li a:hover::after{
     font-size: 30px;
 
 }
-.header-text h1{
+
+/* Hero Typography */
+.header-text h1 {
+    font-size: 48px;
+    font-weight: 700;
+    color: #2b2b2b;
+}
+.header-text h1 span {
+    color: #b38a5e; /* gold accent */
+}
+
+.tagline {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 10px;
+    color: #3b3b3b;
+}
+
+.subtag {
+    max-width: 600px;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 12px;
+    color: #5a5a5a;
+}
+.skills-line {
+    font-size: 15px;
+    margin-top: 10px;
+    color: #7a7a7a;
+}
+/* CTA Button */
+.cta-button {
+    display: inline-block;
+    margin-top: 24px;
+    padding: 12px 24px;
+    border: 1px solid #b38a5e;
+    color: #b38a5e;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-weight: 500;
+}
+.cta-button:hover {
+    background: #b38a5e;
+    color: white;
+}
+/* .header-text h1{
     font-size: 60px;
     margin-top: 20px;
-}
+} */
 
 /*--------about---------*/
 #about{
     padding: 80px 0;
-    color:#ababab;
+    color:#4a4a4a;
 }
 .row{
     display: flex;
@@ -117,10 +173,17 @@ nav ul li a:hover::after{
 .about-col-2{
     flex-basis: 60%;  
 }
+
+.about-col-2 p {
+    line-height: 1.6;
+    color: #4a4a4a;
+    margin-bottom: 14px;
+}
+
 .sub-title{
     font-size: 60px;
     font-weight: 600;
-    color : white;
+    color : #4a4a4a;
 }
 .tab-titles{
     display: flex;
@@ -138,7 +201,7 @@ nav ul li a:hover::after{
     content:'';
     width:0;
     height: 3px;
-    background: #054f68;
+    background: #b38a5e;
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -152,7 +215,7 @@ nav ul li a:hover::after{
     margin: 10px 0;
 }
 .tab-contents ul li span{
-    color: #1e81b0;
+    color: #b38a5e;
     font-size: 14px;
 }
 .tab-contents{
@@ -190,7 +253,7 @@ nav ul li a:hover::after{
 .layer{
     width: 100%;
     height: 0%;
-    background: linear-gradient(rgba(0,0,0,0.6), #054f68);
+    background: linear-gradient(rgba(0,0,0,0.6), #b38a5e);
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -208,16 +271,18 @@ nav ul li a:hover::after{
 .layer h3{
     font-weight: 500;
     margin-bottom: 20px;
+    color: white;
 }
 
 .layer p {
     inline-size: 300px;
     overflow-wrap: break-word;
     margin-bottom: 10px;
+    color: white;
 }
 .layer a{
     margin-top: 20px;
-    color: #054f68;
+    color: #b38a5e;
     text-decoration: none;
     font-size: 18px;
     line-height: 60px;
@@ -231,21 +296,23 @@ nav ul li a:hover::after{
     transform : scale(1.1);
 }
 .work:hover .layer{
-    height: 100%;
+    height: 94%;
 }
 .btn{
     display: block;
     margin: 50px auto;
     width: fit-content;
-    border: 1px solid #054f68;
+    border: 1px solid #b38a5e;
     padding : 14px 50px;
     border-radius: 6px;
     text-decoration: none;
-    color: white;
+    color: #4a4a4a;
     transition: background 0.5s;
 }
 .btn:hover{
-    background: #054f68;
+    /* background: #4a4a4a; */
+        background: #b38a5e;
+        color: white;
 }
 /*------------------contact----------------*/
 .contact-left{
@@ -260,7 +327,7 @@ nav ul li a:hover::after{
     margin-top: 30px;
 }
 .contact-left p i{
-    color:#054f68;
+    color:#b38a5e;
     margin-right: 15px;
     font-size: 25px;
 }
@@ -276,12 +343,14 @@ nav ul li a:hover::after{
     transition: transform 0.5s;
 }
 .social-icons a:hover{
-    color: #054f68;
+    color: #b38a5e;
     transform: translateY(-5px);
 }
 .btn.btn2{
-    display: inline-block;
-    background: #054f68;
+    /* display: inline-block;
+    background: #054f68; */
+            background: #b38a5e;
+            color: white;
 }
 .contact-right form{
      width: 100%;
@@ -315,7 +384,7 @@ form .btn2{
 }
 
 .copyright i{
-    color: #054f68;
+    color: #b38a5e;
 }
 /*------------------------css for smalll screen------------*/
 nav .fa-solid{
@@ -325,11 +394,16 @@ nav .fa-solid{
 
 @media only screen and (max-width:600px){
     #header{
-        background-image:url(images/phone_image.jpg);
+        /* background-image:url(images/phone_image.jpg); */
+        background: linear-gradient(135deg, #f8f4ef 0%, #ede8e2 50%, #f4efe9 100%);color: #fff;
+        color: #2e2e2e; /* Make text readable */
+        padding: 40px 0;
     }
     .header-text{
         margin-top: 100%;
         font-size: 20px;
+        text-align: center;
+        padding: 0 20px;
     }
     .header-text h1{
         font-size: 30px;
@@ -339,7 +413,7 @@ nav .fa-solid{
         font-size: 25px;
     }
     nav ul{
-        background: #054f68;
+        background: #b38a5e;
         position: fixed;
         top: 0;
         right: -200px;
